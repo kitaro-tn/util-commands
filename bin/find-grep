@@ -1,2 +1,2 @@
 #!/bin/bash
-find $1 -type f -name $2 -print | xargs grep $3
+find $1 -type f -name "$2" -print | xargs grep -n "$3"
